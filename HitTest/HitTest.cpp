@@ -51,7 +51,7 @@ HitArea::~HitArea()
 
 bool HitArea::test(int x, int y)
 {
-	if (x < 0 || x >= _width || y < 0 || y > _height)
+	if (x < 0 || x >= _width || y < 0 || y >= _height)
 		return false;
 
 	int bytesPerLine = _width / 8;
